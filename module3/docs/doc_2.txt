@@ -1,0 +1,9 @@
+Zepto Order Cancellation Policy
+
+Order cancellation depends on the current status of the order and the applicable cancellation rules.
+
+A customer may be able to cancel an order before certain fulfillment stages are completed.
+
+Once an order has progressed to a later fulfillment stage, cancellation may no longer be available.
+
+Customers should check the order status in the Zepto application. If cancellation is not available, they can contact Zepto support for assistance.

@@ -1,0 +1,9 @@
+Zepto Missing Item Policy
+
+If an item is missing from an order, the customer should report the issue through Zepto customer support.
+
+The customer should provide the order details and identify the missing item.
+
+Support may request additional information to verify the issue.
+
+The support team will review the order and provide the appropriate assistance according to the applicable policy.

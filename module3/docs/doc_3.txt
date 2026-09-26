@@ -1,0 +1,9 @@
+Zepto Refund Policy
+
+Refund eligibility depends on the reason for the refund, the order status, the payment method, and the applicable refund rules.
+
+When a refund is approved, the refund is processed through the applicable payment provider.
+
+The time required for the refund to appear in the customer's account may vary depending on the payment provider or bank.
+
+Customers should contact Zepto support with their order details if they have questions about an expected refund.

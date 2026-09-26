@@ -1,0 +1,9 @@
+Zepto Product Availability Policy
+
+Product availability depends on inventory at the fulfillment location serving the customer.
+
+A product may be available at one location and unavailable at another location.
+
+Inventory can change as products are purchased, restocked, or become temporarily unavailable.
+
+Customers should check the Zepto application for the latest product availability and pricing information.

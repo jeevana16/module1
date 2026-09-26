@@ -1,0 +1,9 @@
+Zepto Payment Policy
+
+Available payment methods are displayed during checkout in the Zepto application.
+
+A payment failure may be caused by a bank issue, network problem, payment provider issue, or transaction-related problem.
+
+If a payment appears to have failed, customers should first verify the payment status before attempting another payment.
+
+If the payment was deducted but the order status was not updated, the customer should contact support and provide the relevant order and payment information.

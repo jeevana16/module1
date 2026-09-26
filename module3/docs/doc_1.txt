@@ -1,0 +1,9 @@
+Zepto Delivery Policy
+
+Delivery time estimates depend on several factors, including the customer's delivery location, store availability, product availability, traffic conditions, weather, and operational conditions.
+
+The estimated delivery time shown to the customer is an estimate and may change because of unexpected delays or operational issues.
+
+Customers should check the delivery status and estimated arrival time in the Zepto application for the latest information.
+
+If an order is delayed, the customer can contact Zepto support and provide the order details so the support team can check the current status.
