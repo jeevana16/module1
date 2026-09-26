@@ -1,0 +1,234 @@
+
+======================================================================
+Query 1 - SELECT WHERE
+======================================================================
+SELECT
+        title,
+        price_gbp,
+        rating
+
+    FROM books
+
+    WHERE rating >= 4;
+
+                                                                                   title  price_gbp  rating
+                      Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond      49.43       4
+                                                        A Year in Provence (Provence #1)      56.88       4
+                                                      1,000 Places to See Before You Die      26.08       5
+                                                                           Sharp Objects      47.82       4
+                                                                     The Past Never Ends      56.50       4
+                                         The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                                  A Time of Torment (Charlie Parker #14)      48.35       5
+                                   Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+                       What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+                The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                                        Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                                     The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                                                       The Silkworm (Cormoran Strike #2)      23.05       5
+                  The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                                                       The Girl You Lost      12.29       5
+                                                 A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                                                            Mrs. Houdini      30.25       5
+                                                               The Marriage of Opposites      28.08       4
+                                                                       A Paris Apartment      39.01       4
+                                         World Without End (The Pillars of the Earth #2)      32.97       4
+                                                                   The Passion of Dolssa      28.32       5
+                                                                  Voyager (Outlander #3)      21.07       5
+                                                                            The Red Tent      35.66       5
+                                                                  Between Shades of Gray      20.79       5
+                                                                     While You Were Mine      41.32       5
+                                                                   Lost Among the Living      27.70       4
+                                       A Spy's Devotion (The Regency Spies of London #1)      16.97       5
+                                                                                    Join      35.67       5
+William Shakespeare's Star Wars: Verily, A New Hope (William Shakespeare's Star Wars #4)      43.30       4
+                                                                                   Arena      21.36       4
+                                                                        Ready Player One      19.07       4
+                                Having the Barbarian's Baby (Ice Planet Barbarians #7.5)      34.96       4
+
+
+======================================================================
+Query 2 - ORDER BY LIMIT
+======================================================================
+SELECT
+        title,
+        price_gbp,
+        rating
+
+    FROM books
+
+    ORDER BY price_gbp DESC
+
+    LIMIT 10;
+
+                                                                 title  price_gbp  rating
+                                         Boar Island (Anna Pigeon #19)      59.48       3
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                      A Year in Provence (Provence #1)      56.88       4
+                                                   The Past Never Ends      56.50       4
+                                      The Last Painting of Sara de Vos      55.55       2
+                               A Flight of Arrows (The Pathfinders #2)      55.53       5
+                                                        Dune (Dune #1)      54.86       1
+                 Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+                                        The Last Mile (Amos Decker #2)      54.21       2
+                                   1st to Die (Women's Murder Club #1)      53.98       1
+
+
+======================================================================
+Query 3 - DISTINCT
+======================================================================
+SELECT DISTINCT
+        category_name
+
+    FROM categories
+
+    ORDER BY category_name;
+
+     category_name
+Historical Fiction
+           Mystery
+   Science Fiction
+            Travel
+
+
+======================================================================
+Query 4 - BETWEEN
+======================================================================
+SELECT
+        title,
+        price_gbp,
+        price_inr
+
+    FROM books
+
+    WHERE price_gbp BETWEEN 20 AND 40
+
+    ORDER BY price_gbp;
+
+                                                                                            title  price_gbp  price_inr
+                                                             Blood Defense (Samantha Brinkman #1)      20.30    2141.65
+                                                                             Love, Lies and Spies      20.55    2168.02
+                                                                           Between Shades of Gray      20.79    2193.34
+                                                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89    2203.90
+                                                                           Voyager (Outlander #3)      21.07    2222.89
+                                                                                            Arena      21.36    2253.48
+                                                                The Silkworm (Cormoran Strike #2)      23.05    2431.78
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)      23.21    2448.66
+                                                              Career of Evil (Cormoran Strike #3)      24.72    2607.96
+                                              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80    2616.40
+                                What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37    2676.54
+                                                               Extreme Prey (Lucas Davenport #26)      25.40    2679.70
+                                                                                         Starlark      25.83    2725.06
+                                                               1,000 Places to See Before You Die      26.08    2751.44
+                                                                                  Soft Apocalypse      26.12    2755.66
+                                                                        Girl With a Pearl Earring      26.77    2824.24
+                                                                 Poisonous (Max Revere Novels #3)      26.80    2827.40
+                                                                                        The Widow      27.26    2875.93
+                                                                            Lost Among the Living      27.70    2922.35
+                                                                        The Marriage of Opposites      28.08    2962.44
+                                                                            The Passion of Dolssa      28.32    2987.76
+                        Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton      29.69    3132.30
+                                                                                     Mrs. Houdini      30.25    3191.38
+                                                                         The Great Railway Bazaar      30.54    3221.97
+                                                   Foundation (Foundation (Publication Order) #1)      32.42    3420.31
+                                                  World Without End (The Pillars of the Earth #2)      32.97    3478.34
+                          Life, the Universe and Everything (Hitchhiker's Guide to the Galaxy #3)      33.26    3508.93
+                                                                                The Secret Healer      34.56    3646.08
+                                         Having the Barbarian's Baby (Ice Planet Barbarians #7.5)      34.96    3688.28
+                                                                                      Most Wanted      35.28    3722.04
+                                                                                     The Red Tent      35.66    3762.13
+                                                                                             Join      35.67    3763.19
+                                                          The Last Girl (The Dominion Trilogy #1)      36.26    3825.43
+                              Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel      36.94    3897.17
+                                                                            The House by the Lake      36.95    3898.23
+                                                                             Under the Tuscan Sun      37.33    3938.31
+                                                                           The Invention of Wings      37.34    3939.37
+                                            Mesaerion: The Best Science Fiction Stories 1800-1849      37.59    3965.75
+                                                            In the Woods (Dublin Murder Squad #1)      38.38    4049.09
+                                                        Neither Here nor There: Travels in Europe      38.95    4109.23
+                                                                                A Paris Apartment      39.01    4115.55
+
+
+======================================================================
+Query 5 - IN
+======================================================================
+SELECT
+        title,
+        rating,
+        in_stock
+
+    FROM books
+
+    WHERE rating IN (4, 5)
+
+    ORDER BY rating DESC;
+
+                                                                                   title  rating  in_stock
+                                                      1,000 Places to See Before You Die       5         1
+                                                  A Time of Torment (Charlie Parker #14)       5         1
+                       What Happened on Beale Street (Secrets of the South Mysteries #2)       5         1
+                The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5         1
+                                                       The Silkworm (Cormoran Strike #2)       5         1
+                                                                       The Girl You Lost       5         1
+                                                 A Flight of Arrows (The Pathfinders #2)       5         1
+                                                                            Mrs. Houdini       5         1
+                                                                   The Passion of Dolssa       5         1
+                                                                  Voyager (Outlander #3)       5         1
+                                                                            The Red Tent       5         1
+                                                                  Between Shades of Gray       5         1
+                                                                     While You Were Mine       5         1
+                                       A Spy's Devotion (The Regency Spies of London #1)       5         1
+                                                                                    Join       5         1
+                      Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond       4         1
+                                                        A Year in Provence (Provence #1)       4         1
+                                                                           Sharp Objects       4         1
+                                                                     The Past Never Ends       4         1
+                                         The Murder of Roger Ackroyd (Hercule Poirot #4)       4         1
+                                   Murder at the 42nd Street Library (Raymond Ambler #1)       4         1
+                                        Delivering the Truth (Quaker Midwife Mystery #1)       4         1
+                                     The Mysterious Affair at Styles (Hercule Poirot #1)       4         1
+                  The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)       4         1
+                                                               The Marriage of Opposites       4         1
+                                                                       A Paris Apartment       4         1
+                                         World Without End (The Pillars of the Earth #2)       4         1
+                                                                   Lost Among the Living       4         1
+William Shakespeare's Star Wars: Verily, A New Hope (William Shakespeare's Star Wars #4)       4         1
+                                                                                   Arena       4         1
+                                                                        Ready Player One       4         1
+                                Having the Barbarian's Baby (Ice Planet Barbarians #7.5)       4         1
+
+
+======================================================================
+Query 6 - JOIN
+======================================================================
+SELECT
+        b.title,
+        c.category_name,
+        b.price_gbp,
+        b.price_inr,
+        b.rating,
+        b.in_stock
+
+    FROM books AS b
+
+    JOIN categories AS c
+
+        ON b.category_id = c.category_id
+
+    ORDER BY
+        b.rating DESC,
+        b.price_gbp DESC
+
+    LIMIT 10;
+
+                                                                   title      category_name  price_gbp  price_inr  rating  in_stock
+                                 A Flight of Arrows (The Pathfinders #2) Historical Fiction      55.53    5858.42       5         1
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)            Mystery      52.30    5517.65       5         1
+                                  A Time of Torment (Charlie Parker #14)            Mystery      48.35    5100.92       5         1
+                                                     While You Were Mine Historical Fiction      41.32    4359.26       5         1
+                                                                    Join    Science Fiction      35.67    3763.19       5         1
+                                                            The Red Tent Historical Fiction      35.66    3762.13       5         1
+                                                            Mrs. Houdini Historical Fiction      30.25    3191.38       5         1
+                                                   The Passion of Dolssa Historical Fiction      28.32    2987.76       5         1
+                                      1,000 Places to See Before You Die             Travel      26.08    2751.44       5         1
+       What Happened on Beale Street (Secrets of the South Mysteries #2)            Mystery      25.37    2676.54       5         1
+
